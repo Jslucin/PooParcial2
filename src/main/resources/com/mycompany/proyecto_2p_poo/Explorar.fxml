@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto_2p_poo.ExplorarController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="483.0">
+         <children>
+            <Pane id="panel" fx:id="panel" prefHeight="482.0" prefWidth="476.0" stylesheets="@panel.css" />
+         </children>
+      </Pane>
+      <Pane prefHeight="525.0" prefWidth="187.0">
+         <children>
+            <ComboBox fx:id="comborovers" layoutX="23.0" layoutY="26.0" onAction="#cargaracciones" prefHeight="17.0" prefWidth="146.0" />
+            <TextField fx:id="textfi" layoutX="34.0" layoutY="75.0" onKeyReleased="#Iniciarcomandos" prefHeight="22.0" prefWidth="123.0" />
+            <Label layoutX="44.0" layoutY="51.0" text="Ingrese comandos: " />
+            <Label layoutX="33.0" layoutY="119.0" text="Comandos ingresados:" />
+            <TextArea fx:id="Zonacomandos" layoutX="33.0" layoutY="156.0" prefHeight="185.0" prefWidth="120.0" />
+            <Pane fx:id="paneldatos" layoutX="1.0" layoutY="341.0" prefHeight="185.0" prefWidth="195.0" />
+         </children>
+      </Pane>
+   </children>
+</HBox>
